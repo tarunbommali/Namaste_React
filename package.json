@@ -1,0 +1,35 @@
+{
+  "name": "namaste",
+  "version": "1.0.0",
+  "description": "this is namaste react",
+  "keywords": [
+    "react"
+  ],
+  "homepage": "https://github.com/Likhithaj123/Namaste_React#readme",
+  "bugs": {
+    "url": "https://github.com/Likhithaj123/Namaste_React/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Likhithaj123/Namaste_React.git"
+  },
+  "license": "ISC",
+  "author": "likhitha",
+
+  
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test" : "jest"
+
+
+  
+  },
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
