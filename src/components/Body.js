@@ -39,19 +39,24 @@ const Body = () => {
                   setSearchText(e.target.value)}}
                 
                 />
+              
                 <button onClick={() => {
-                  const filteredRestaurant = listOfRestaurants.filter((res) => res?.info?.name?.includes(searchText.toLowerCase()));
-                  setFilteredRestaurants(filteredRestaurant);
-                  setFilteredRestaurants(listOfRestaurants.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase())));
-                }}>Search</button>
+                const filteredRestaurant = listOfRestaurants.filter((res) =>
+                 res.info.name.toLowerCase().includes(searchText.toLowerCase())
+              );
+  setFilteredRestaurants(filteredRestaurant);
+}}>
+  Search
+</button>
+
               </div>
           <button 
              className="filter-btn" 
              onClick={() => {
               const filteredList = listOfRestaurants.filter(
-                (res) => res.info.avgRating > 4.4
+                (res) => res.info.avgRating > 4.5
               );
-              setListOfRestaurants(filteredList);
+              setFilteredRestaurants(filteredList);
               
              }}>
              Top Rated Restaurants

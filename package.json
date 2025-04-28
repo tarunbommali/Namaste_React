@@ -15,21 +15,17 @@
   },
   "license": "ISC",
   "author": "likhitha",
-
-  
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
-    "test" : "jest"
-
-
-  
+    "test": "jest"
   },
   "devDependencies": {
     "parcel": "^2.14.4"
   },
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^6.30.0"
   }
 }
