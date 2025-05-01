@@ -1,3 +1,5 @@
+
+
 import { useState } from "react";
 import { LOGO_URL } from "../../utils/constants";
 import { Link } from "react-router-dom";
@@ -13,29 +15,29 @@ const [btnNameReact , setBtnNameReact] = useState("Login");
 const onlineStatus = useOnlineStatus();
 
 return (
-  <div className="header">
+  <div className="flex justify-between bg-pink-100 shadow-lg ">
       <div className="logo-container">
-        <img src={LOGO_URL} alt="food" className="logo" />
+        <img src={LOGO_URL} alt="food" className="w-56" />
       </div>
-      <div className="nav-items">
-        <ul>
-          <li>
-       Online Status = {onlineStatus ? "🟢" : "🔴"}
+      <div className="flex items-center ">
+        <ul  className="flex  p-4 m-4">
+          <li className="px-8 font-bold text-lg">
+       Online Status = {onlineStatus ? "🟢" : "🔴" }
           </li>
-        <li>
+        <li className="px-8 font-bold text-lg">
           <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="px-8 font-bold text-lg">
           <Link to="/about">About</Link>
           </li>
           
-          <li>
+          <li className="px-8 font-bold text-lg">
             <Link to="/contact">Contact</Link>
           </li>
-          <li>
+          <li className="px-8 font-bold text-lg">
             <Link to="/grocery">Grocery</Link>
           </li>
-          <li>
+          <li className="px-8 font-bold text-lg">
             <Link to="/cart">Cart</Link>
           </li>
           <button className="login" 
