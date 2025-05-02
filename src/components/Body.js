@@ -68,16 +68,17 @@ const fetchData = async () => {
 
      ): (
           <div className="Body">
-             <div className="filter">
-              <div className="search">
-                <input type="text"  className="search-box" 
+             <div className="filter flex">
+              <div className="search m-4 p-4 bg-pink-50 ">
+                <input type="text"  className="search-box border  border-solid border-black" 
                 value={searchText}
                 onChange={(e) => {
                   setSearchText(e.target.value)}}
                 
                 />
-              
-                <button onClick={() => {
+             
+                <button className="search-btn bg-green-100 px-3 py-2 m-2 rounded-4xl border border-solid border-black"
+                onClick={() => {
                 const filteredRestaurant = listOfRestaurants.filter((res) =>
                  res.info.name.toLowerCase().includes(searchText.toLowerCase())
               );
@@ -86,9 +87,12 @@ const fetchData = async () => {
   Search
 </button>
 
+
+
               </div>
+              <div className="filter-btns flex m-4 p-4 bg-pink-50"> 
           <button 
-             className="filter-btn" 
+             className="px-3 py-2 m-2 bg-green-100 rounded-4xl border border-solid border-black" 
              onClick={() => {
               const filteredList = listOfRestaurants.filter(
                 (res) => res.info.avgRating > 4.5
@@ -98,9 +102,10 @@ const fetchData = async () => {
              }}>
              Top Rated Restaurants
           </button>
+          </div>
            
               </div>
-             <div className="res-container">
+             <div className="flex flex-wrap justify-center">
                {
                  filteredRestaurants.map((restaurant) => (
                    <Link key={restaurant?.info?.id} to={"/restaurants/" + restaurant?.info?.id}> <RestaurantCard resData={restaurant?.info}  /> </Link>

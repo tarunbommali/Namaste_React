@@ -21,23 +21,24 @@ return (
       </div>
       <div className="flex items-center ">
         <ul  className="flex  p-4 m-4">
-          <li className="px-8 font-bold text-lg">
+          <li className="px-4 font-bold text-lg">
        Online Status = {onlineStatus ? "🟢" : "🔴" }
           </li>
-        <li className="px-8 font-bold text-lg">
+        <li className="px-4 font-bold text-lg">
           <Link to="/">Home</Link>
           </li>
-          <li className="px-8 font-bold text-lg">
+          <li className="px-4 font-bold text-lg">
           <Link to="/about">About</Link>
           </li>
           
-          <li className="px-8 font-bold text-lg">
+          <li className="px-4 font-bold text-lg">
             <Link to="/contact">Contact</Link>
           </li>
-          <li className="px-8 font-bold text-lg">
+          <li className="px-4 font-bold text-lg">
             <Link to="/grocery">Grocery</Link>
           </li>
-          <li className="px-8 font-bold text-lg">
+
+          <li className="px-4 font-bold text-lg">
             <Link to="/cart">Cart</Link>
           </li>
           <button className="login" 
