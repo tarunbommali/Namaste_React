@@ -41,6 +41,11 @@ const RestaurantMenu = () => {
       ?.groupedCard?.cardGroupMap?.REGULAR?.cards
       ?.find((card) => card?.card?.card?.itemCards)?.card?.card?.itemCards || [];
 
+      console.log( resInfo?.cards
+        ?.find((card) => card?.groupedCard)
+        ?.groupedCard?.cardGroupMap?.REGULAR?.cards
+        ?.find((card) => card?.card?.card?.itemCards)?.card?.card?.itemCards);
+
   return (
     <div className="menu">
       <h1>{name}</h1>
