@@ -1,16 +1,16 @@
 import ItemList from "./ItemList";
 
 const  RestaurantCategory = ({ data }) => {
-    console.log(data);
+    console.log("Accordian Data: "+data);
 
     return (
     <div>
         
-      <div className="w-6/12 bg-gray-50 shadow-lg p-4 m-2 ">
+      <div className=" flex justify-between bg-red-800 text-white w-full  shadow-lg p-4 m-2 ">
 
-      <span className="font-bold text-lg">{data.title}  </span>
+      <h1 className="font-bold text-lg">{data.title}  </h1>
       {/* {{data,itemCards,length}} */}
-      <span>⏬</span>
+      <button>⏬</button>
       </div>
 
      <ItemList items={data.itemCards} />

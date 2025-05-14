@@ -17,7 +17,7 @@ const onlineStatus = useOnlineStatus();
 return (
   <div className="flex justify-between bg-pink-100 shadow-lg ">
       <div className="logo-container">
-        <img src={LOGO_URL} alt="food" className="w-56" />
+        <img src={LOGO_URL} alt="food" className="w-40 h-40" />
       </div>
       <div className="flex items-center ">
         <ul  className="flex  p-4 m-4">
